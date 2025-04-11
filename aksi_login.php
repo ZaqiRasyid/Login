@@ -12,6 +12,9 @@ $cek = mysqli_num_rows($sql);
 
 if ($cek > 0) {
 	$data = mysqli_fetch_array($sql);
+	if ($data['level']=="admin")
+	{
+	session_start();
 	$_SESSION['username'] = $data['username'];
 	$_SESSION['userid'] = $data['userid'];
 	$_SESSION['status'] = 'login';
@@ -19,11 +22,33 @@ if ($cek > 0) {
 	alert('Login berhasil');
 	location.href='../admin/index.php';
 	</script>";
-}	else {
+	}else if ($data['level']=="pengembang")
+	{
+	session_start();
+	$_SESSION['username'] = $data['username'];
+	$_SESSION['userid'] = $data['userid'];
+	$_SESSION['status'] = 'login';
+	echo "<script>
+	alert('Login berhasil');
+	location.href='../pengembang/index.php';
+	</script>";
+	}else if ($data['level']=="player")
+	{
+	session_start();
+	$_SESSION['username'] = $data['username'];
+	$_SESSION['userid'] = $data['userid'];
+	$_SESSION['status'] = 'login';
+	echo "<script>
+	alert('Login berhasil');
+	location.href='../player/index.php';
+	</script>";	
+	}else
+	{
 	echo "<script>
 	alert('Username atau Password anda salah!');
-	location.href='../login.php';
+	location.href='login.php';
 	</script>";
+	}
 }
 
 ?>
