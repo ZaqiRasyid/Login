@@ -16,10 +16,7 @@
     <div class="collapse navbar-collapse mt-2" id="navbarNavAltMarkup">
       <div class="navbar-nav me-auto">
 
-      </div>
-       <a href="register.php" class="btn btn-outline-primary m-1">Daftar</a>
-       <a href="login.php" class="btn btn-outline-success m-1">Masuk</a>
-      
+      </div>      
     </div>
   </div>
 </nav>
@@ -29,11 +26,11 @@
       <div class="card">
         <div class="card-body bg-light">
           <div class="text-center">
-            <h5>Silakan Login disini</h5>
+            <h5>Login Player</h5>
           </div>
-          <form action="config/aksi_login.php" method="POST">
-            <label class="form-label">Username</label>
-            <input type="text" name="username" class="form-control" required>
+          <form action="cek_login.php" method="POST">
+            <label class="form-label">Nama</label>
+            <input type="text" name="nama" class="form-control" required>
             <label class="form-label">Password</label>
             <input type="password" name="password" class="form-control" required>
             <div class="d-grid mt-2">
@@ -42,6 +39,7 @@
           </form>
           <hr>
           <p>Belum punya akun? <a href="register.php">Daftar disini!</a></p>
+          <p>Login sebagai admin -> <a href="index2.php">Klik disini!</a></p>
         </div>
       </div>
     </div>
