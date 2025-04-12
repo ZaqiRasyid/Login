@@ -29,7 +29,7 @@
           <div class="text-center">
             <h5>Login Admin</h5>
           </div>
-          <form action="cek_login2.php" method="POST">
+          <form action="aksi_login2.php" method="POST">
             <label class="form-label">Username</label>
             <input type="text" name="username" class="form-control" required>
             <label class="form-label">Password</label>
