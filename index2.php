@@ -31,7 +31,7 @@
           </div>
           <form action="aksi_login2.php" method="POST">
             <label class="form-label">Username</label>
-            <input type="text" name="username" class="form-control" required>
+            <input type="text" name="nama" class="form-control" required>
             <label class="form-label">Password</label>
             <input type="password" name="password" class="form-control" required>
             <div class="d-grid mt-2">
