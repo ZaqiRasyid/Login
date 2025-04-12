@@ -28,7 +28,7 @@
           <div class="text-center">
             <h5>Login Player</h5>
           </div>
-          <form action="cek_login.php" method="POST">
+          <form action="aksi_login.php" method="POST">
             <label class="form-label">Nama</label>
             <input type="text" name="nama" class="form-control" required>
             <label class="form-label">Password</label>
